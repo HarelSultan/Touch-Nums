@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Nums Game!</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="game-container">
+
+        <button class="restart-btn" onclick="onInit()">Restart Game</button>
+        <div class="game-timer">Stopwatch 00:00:000</div>
+        <div class="winner">Champion 🏆</div>
+        <!-- <div class="game-level">
+            <button onclick="changeGameLevel(4)">Easy(16)</button>
+            <button onclick="changeGameLevel(5)">Hard(25)</button>
+            <button onclick="changeGameLevel(6)">Extreme!(36)</button>
+        </div> -->
+
+        <div class="game-level">
+
+            <label class="radio" onclick="changeGameLevel(4)">
+                <input type="radio" name="myRadioField" class="radio-input">
+                <div class="radio-radio"></div>
+                Easy
+            </label>
+
+            <label class="radio" onclick="changeGameLevel(5)">
+                <input type="radio" name="myRadioField" class="radio-input">
+                <div class="radio-radio"></div>
+                Hard
+            </label>
+
+            <label class="radio" onclick="changeGameLevel(6)">
+                <input type="radio" name="myRadioField" class="radio-input">
+                <div class="radio-radio"></div>
+                Hell!
+            </label>
+
+        </div>
+
+
+        <table class="table-container">
+        </table>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
